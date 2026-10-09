@@ -11,7 +11,7 @@
 
 ![Tutorial header image](https://raw.githubusercontent.com/NucleusEngineering/serverless/main/.images/run.jpg)
 
-Welcome to **DevFest Astana**! In this hands-on workshop, you will build and deploy an autonomous **DevOps & SRE Agent** using Google Cloud's **Agent Development Kit (ADK)** and **Gemini 2.5 Flash**.
+Welcome to **Google for Developers Day Istanbul**! In this hands-on workshop, you will build and deploy an autonomous **DevOps & SRE Agent** using Google Cloud's **Agent Development Kit (ADK)** and **Gemini 2.5 Flash**.
 
 Crucially, we will **NOT** use traditional Service Account keys or assign broad Service Account roles. Instead, we deploy to Google's **Vertex AI Agent Engine** using **Native SPIFFE Workload Identity (`AGENT_IDENTITY`)**.
 
@@ -54,7 +54,7 @@ echo "Region: $REGION"
 Make sure you are in the repository directory and explore the agent structure:
 
 ```bash
-cd ~/cloudshell_open/devfest-astana
+cd ~/cloudshell_open/google-4-dev-days-ist
 git pull
 ls -la devops_agent
 ```
@@ -147,7 +147,7 @@ Notice that there is **NO** service account attached! The agent's identity is a 
 Now let's package and deploy our DevOps agent code into the newly created Agent Engine instance using ADK:
 
 ```bash
-cd ~/cloudshell_open/devfest-astana
+cd ~/cloudshell_open/google-4-dev-days-ist
 export AGENT_ENGINE_ID=$(cat .engine_id)
 
 adk deploy agent_engine \
@@ -268,7 +268,7 @@ You have successfully built, deployed, and secured a production-grade DevOps Age
 ### 👨‍💻 Workshop Author
 **Prepared by:** **Alper Sarı**  
 *Google Developer Expert (GDE) on Google Cloud*  
-*DevFest Astana*
+*Google for Developers Day Istanbul*
 
 <walkthrough-inline-feedback></walkthrough-inline-feedback>
 

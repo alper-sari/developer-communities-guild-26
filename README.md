@@ -1,6 +1,6 @@
 # Not Risky Anymore: Enforcing Native IAM Boundaries for Production AI Agents
 
-> **DevFest Astana Hands-on Workshop**: Build, deploy, and secure an autonomous DevOps & SRE AI Agent using Google Cloud's **Agent Development Kit (ADK)**, **Gemini 2.5 Flash**, and **Vertex AI Agent Engine** with **Zero Service Accounts** and **Native SPIFFE Workload Identity**.
+> **Google for Developers Day Istanbul Hands-on Workshop**: Build, deploy, and secure an autonomous DevOps & SRE AI Agent using Google Cloud's **Agent Development Kit (ADK)**, **Gemini 2.5 Flash**, and **Vertex AI Agent Engine** with **Zero Service Accounts** and **Native SPIFFE Workload Identity**.
 
 ---
 
@@ -8,7 +8,7 @@
 
 Click the button below to launch the interactive, guided walkthrough directly inside Google Cloud Shell:
 
-[![Begin the Tutorial](.journey/journey.svg)](https://console.cloud.google.com/agent-platform/runtimes?cloudshell_git_repo=https://github.com/alper-sari/devfest-astana.git&cloudshell_tutorial=.journey/tutorial.neos.md&show=ide&cloudshell_workspace=)
+[![Begin the Tutorial](.journey/journey.svg)](https://console.cloud.google.com/agent-platform/runtimes?cloudshell_git_repo=https://github.com/alper-sari/google-4-dev-days-ist.git&cloudshell_tutorial=.journey/tutorial.neos.md&show=ide&cloudshell_workspace=)
 
 ---
 
@@ -46,7 +46,7 @@ The DevOps Agent includes production-ready SRE observation tools:
 ## 📂 Repository Structure
 
 ```text
-devfest-astana/
+google-4-dev-days-ist/
 ├── .journey/
 │   ├── journey.svg              # Cloud Shell "Begin Tutorial" button
 │   └── tutorial.neos.md         # Interactive step-by-step walkthrough
@@ -67,8 +67,8 @@ devfest-astana/
 
 ### 1. Clone & Setup
 ```bash
-git clone https://github.com/alper-sari/devfest-astana.git
-cd devfest-astana
+git clone https://github.com/alper-sari/google-4-dev-days-ist.git
+cd google-4-dev-days-ist
 ```
 
 ### 2. Install Dependencies
@@ -98,7 +98,7 @@ adk deploy agent_engine \
 
 ---
 
-## 🏆 DevFest Astana Presentation Highlights
+## 🏆 Google for Developers Day Istanbul Presentation Highlights
 
 1. **Compare Models**: Explain how **Gemini 2.5 Flash** brings state-of-the-art agentic tool calling and reasoning with sub-second latency.
 2. **Demonstrate Zero Trust**: Show the agent failing with `403 Forbidden` before permissions are granted, proving that no ambient service account access exists.
@@ -110,10 +110,10 @@ adk deploy agent_engine \
 
 **Alper Sarı**  
 *Google Developer Expert (GDE) on Google Cloud*  
-*DevFest Astana*
+*Google for Developers Day Istanbul*
 
 ---
 
 ## 📄 License
 
-Apache 2.0 - Developed for DevFest Astana workshops.
+Apache 2.0 - Developed for Google for Developers Day Istanbul workshops.
