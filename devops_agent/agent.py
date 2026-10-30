@@ -5,6 +5,7 @@ os.environ.setdefault("GOOGLE_CLOUD_LOCATION", "us-central1")
 os.environ["GOOGLE_GENAI_USE_ENTERPRISE"] = "1"
 
 from google.adk import Agent
+from google.adk.models import Gemini
 from .tools import (
     list_storage_buckets,
     inspect_storage_bucket,
@@ -17,6 +18,9 @@ from .tools import (
 
 # Model configuration: Defaults to Gemini 3.5 Flash-Lite, configurable via MODEL_ID env var
 MODEL_NAME = os.environ.get("MODEL_ID", "gemini-3.5-flash-lite")
+# gemini-3.5-flash-lite is not served in us-central1, so model calls use the global endpoint.
+# The agent itself still runs in us-central1; only model calls go to global.
+MODEL_LOCATION = os.environ.get("MODEL_LOCATION", "global")
 
 AGENT_INSTRUCTION = """\
 You are an autonomous Google Cloud DevOps and SRE Assistant deployed on Cloud Run.
@@ -43,7 +47,10 @@ When answering:
 
 root_agent = Agent(
     name="devops_agent",
-    model=MODEL_NAME,
+    model=Gemini(
+        model=MODEL_NAME,
+        client_kwargs={"enterprise": True, "location": MODEL_LOCATION},
+    ),
     description="DevOps and SRE Agent for Google Cloud with SPIFFE Workload Identity.",
     instruction=AGENT_INSTRUCTION,
     tools=[
