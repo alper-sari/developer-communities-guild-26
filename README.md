@@ -71,10 +71,10 @@ git clone https://github.com/alper-sari/devfest-ankara-26.git
 cd devfest-ankara-26
 ```
 
-### 2. Install Dependencies
+### 2. Upgrade the Agent Platform SDK
+`adk` comes preinstalled in Cloud Shell; only the SDK needs to be upgraded for `adk deploy`:
 ```bash
-python3 -m pip install --upgrade uv
-uv pip install --system google-adk "google-cloud-aiplatform[adk,agent_engines]"
+pip install --upgrade --user "google-cloud-aiplatform[adk,agent_engines]>=2.2,<3"
 ```
 
 ### 3. Provision Native Agent Identity

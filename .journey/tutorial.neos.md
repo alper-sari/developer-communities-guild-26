@@ -72,19 +72,12 @@ cat devops_agent/agent.py
 
 Notice that the agent connects to Vertex AI using `gemini-3.5-flash-lite`, and registers tools for infrastructure observation without embedding any credentials or keys.
 
-## Install ADK CLI
+## Upgrade the Agent Platform SDK
 
-We install the Google Agent Development Kit CLI (`adk`) to deploy our agent package to Vertex AI:
-
-```bash
-python3 -m pip install --quiet --upgrade uv
-uv pip install --system --quiet google-adk "google-cloud-aiplatform[adk,agent_engines]"
-```
-
-Verify that the ADK CLI is ready:
+The `adk` CLI is already available in Cloud Shell, but the bundled Agent Platform SDK is too old for `adk deploy`. Upgrade it before deploying:
 
 ```bash
-adk --help
+pip install --quiet --upgrade --user "google-cloud-aiplatform[adk,agent_engines]>=2.2,<3"
 ```
 
 ## Review the AGENT_IDENTITY Specification
