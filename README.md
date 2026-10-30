@@ -1,6 +1,6 @@
 # Not Risky Anymore: Enforcing Native IAM Boundaries for Production AI Agents
 
-> **Google for Developers Day Istanbul Hands-on Workshop**: Build, deploy, and secure an autonomous DevOps & SRE AI Agent using Google Cloud's **Agent Development Kit (ADK)**, **Gemini 2.5 Flash**, and **Vertex AI Agent Engine** with **Zero Service Accounts** and **Native SPIFFE Workload Identity**.
+> **DevFest Ankara'26 Hands-on Workshop**: Build, deploy, and secure an autonomous DevOps & SRE AI Agent using Google Cloud's **Agent Development Kit (ADK)**, **Gemini 3.5 Flash-Lite**, and **Vertex AI Agent Engine** with **Zero Service Accounts** and **Native SPIFFE Workload Identity**.
 
 ---
 
@@ -8,7 +8,7 @@
 
 Click the button below to launch the interactive, guided walkthrough directly inside Google Cloud Shell:
 
-[![Begin the Tutorial](.journey/journey.svg)](https://console.cloud.google.com/agent-platform/runtimes?cloudshell_git_repo=https://github.com/alper-sari/google-4-dev-days-ist.git&cloudshell_tutorial=.journey/tutorial.neos.md&show=ide&cloudshell_workspace=)
+[![Begin the Tutorial](.journey/journey.svg)](https://console.cloud.google.com/agent-platform/runtimes?cloudshell_git_repo=https://github.com/alper-sari/devfest-ankara-26.git&cloudshell_tutorial=.journey/tutorial.neos.md&show=ide&cloudshell_workspace=)
 
 ---
 
@@ -23,7 +23,7 @@ This workshop demonstrates Google Cloud's next-generation **Agent Identity (`AGE
 
 ```mermaid
 flowchart LR
-    User["👨‍💻 SRE Engineer"] -->|Prompts / Questions| Agent["🤖 DevOps Agent\n(Gemini 2.5 Flash)"]
+    User["👨‍💻 SRE Engineer"] -->|Prompts / Questions| Agent["🤖 DevOps Agent\n(Gemini 3.5 Flash-Lite)"]
     Agent -->|Runs on| AE["⚡ Vertex AI Agent Engine\n(Serverless ADK Runtime)"]
     AE -->|Identity| SPIFFE["🛡️ Native AGENT_IDENTITY\n(spiffe://agents.global...)"]
     SPIFFE -->|Cloud IAM Policy Binding| IAM["🔐 Google Cloud IAM\n(roles/viewer bound to SPIFFE)"]
@@ -46,13 +46,13 @@ The DevOps Agent includes production-ready SRE observation tools:
 ## 📂 Repository Structure
 
 ```text
-google-4-dev-days-ist/
+devfest-ankara-26/
 ├── .journey/
 │   ├── journey.svg              # Cloud Shell "Begin Tutorial" button
 │   └── tutorial.neos.md         # Interactive step-by-step walkthrough
 ├── devops_agent/
 │   ├── __init__.py              # ADK agent package initialization
-│   ├── agent.py                 # Root Agent definition & Gemini 2.5 Flash config
+│   ├── agent.py                 # Root Agent definition & Gemini 3.5 Flash-Lite config
 │   ├── tools.py                 # SRE inspection tools (Storage, Run, SPIFFE)
 │   ├── engine_spec.json         # AGENT_IDENTITY configuration
 │   ├── requirements.txt         # Container dependencies
@@ -67,8 +67,8 @@ google-4-dev-days-ist/
 
 ### 1. Clone & Setup
 ```bash
-git clone https://github.com/alper-sari/google-4-dev-days-ist.git
-cd google-4-dev-days-ist
+git clone https://github.com/alper-sari/devfest-ankara-26.git
+cd devfest-ankara-26
 ```
 
 ### 2. Install Dependencies
@@ -98,9 +98,9 @@ adk deploy agent_engine \
 
 ---
 
-## 🏆 Google for Developers Day Istanbul Presentation Highlights
+## 🏆 DevFest Ankara'26 Presentation Highlights
 
-1. **Compare Models**: Explain how **Gemini 2.5 Flash** brings state-of-the-art agentic tool calling and reasoning with sub-second latency.
+1. **Compare Models**: Explain how **Gemini 3.5 Flash-Lite** brings state-of-the-art agentic tool calling and reasoning with sub-second latency.
 2. **Demonstrate Zero Trust**: Show the agent failing with `403 Forbidden` before permissions are granted, proving that no ambient service account access exists.
 3. **Grant Granular IAM**: Bind `roles/viewer` directly to `principalSet://agents.global.proj-<NUM>.system.id.goog/attribute.platformContainer/aiplatform/projects/<NUM>` and watch the agent immediately succeed.
 
@@ -110,10 +110,10 @@ adk deploy agent_engine \
 
 **Alper Sarı**  
 *Google Developer Expert (GDE) on Google Cloud*  
-*Google for Developers Day Istanbul*
+*DevFest Ankara'26*
 
 ---
 
 ## 📄 License
 
-Apache 2.0 - Developed for Google for Developers Day Istanbul workshops.
+Apache 2.0 - Developed for DevFest Ankara'26 workshops.
