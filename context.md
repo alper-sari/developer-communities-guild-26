@@ -1,5 +1,5 @@
 Context and Current Objective
-We are attempting to deploy a Vertex AI Reasoning Engine (Agent) in the GCP project poc-project-3592 (us-central1). The agent uses the gemini-2.5-flash model and is equipped with a tool to list objects in a specified GCS bucket. We are configuring the agent to run using Vertex AI's native AGENT_IDENTITY rather than a standard service account.
+We are attempting to deploy a Vertex AI Reasoning Engine (Agent) in the GCP project poc-project-3592 (us-central1). The agent uses the gemini-3.5-flash-lite model and is equipped with a tool to list objects in a specified GCS bucket. We are configuring the agent to run using Vertex AI's native AGENT_IDENTITY rather than a standard service account.
 
 The Problem
 When submitting the deployment payload, the Long-Running Operation (LRA) would initiate and eventually return "done": true, but the container would crash during startup with the error: code: 3 (failed to start and cannot serve traffic).

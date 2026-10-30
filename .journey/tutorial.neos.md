@@ -70,7 +70,7 @@ Let's inspect the agent definition:
 cat devops_agent/agent.py
 ```
 
-Notice that the agent connects to Vertex AI using `gemini-2.5-flash`, and registers tools for infrastructure observation without embedding any credentials or keys.
+Notice that the agent connects to Vertex AI using `gemini-3.5-flash-lite`, and registers tools for infrastructure observation without embedding any credentials or keys.
 
 ## Install ADK CLI
 
