@@ -11,7 +11,7 @@
 
 ![Tutorial header image](https://raw.githubusercontent.com/NucleusEngineering/serverless/main/.images/run.jpg)
 
-Welcome to **DevFest Ankara'26**! In this hands-on workshop, you will build and deploy an autonomous **DevOps & SRE Agent** using Google Cloud's **Agent Development Kit (ADK)** and **Gemini 3.5 Flash-Lite**.
+Welcome to **Developer Communities Guild'26**! In this hands-on workshop, you will build and deploy an autonomous **DevOps & SRE Agent** using Google Cloud's **Agent Development Kit (ADK)** and **Gemini 3.5 Flash-Lite**.
 
 Crucially, we will **NOT** use traditional Service Account keys or assign broad Service Account roles. Instead, we deploy to Google's **Vertex AI Agent Engine** using **Native SPIFFE Workload Identity (`AGENT_IDENTITY`)**.
 
@@ -261,7 +261,7 @@ You have successfully built, deployed, and secured a production-grade DevOps Age
 ### 👨‍💻 Workshop Author
 **Prepared by:** **Alper Sarı**  
 *Google Developer Expert (GDE) on Google Cloud*  
-*DevFest Ankara'26*
+*Developer Communities Guild'26*
 
 <walkthrough-inline-feedback></walkthrough-inline-feedback>
 
