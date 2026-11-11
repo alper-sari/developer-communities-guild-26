@@ -54,7 +54,7 @@ echo "Region: $REGION"
 Make sure you are in the repository directory and explore the agent structure:
 
 ```bash
-cd ~/cloudshell_open/devfest-ankara-26
+cd ~/cloudshell_open/developer-communities-guild-26
 git pull
 ls -la devops_agent
 ```
@@ -140,7 +140,7 @@ Notice that there is **NO** service account attached! The agent's identity is a 
 Now let's package and deploy our DevOps agent code into the newly created Agent Engine instance using ADK:
 
 ```bash
-cd ~/cloudshell_open/devfest-ankara-26
+cd ~/cloudshell_open/developer-communities-guild-26
 export AGENT_ENGINE_ID=$(cat .engine_id)
 
 adk deploy agent_engine \

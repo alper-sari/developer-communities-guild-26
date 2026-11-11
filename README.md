@@ -8,7 +8,7 @@
 
 Click the button below to launch the interactive, guided walkthrough directly inside Google Cloud Shell:
 
-[![Begin the Tutorial](.journey/journey.svg)](https://console.cloud.google.com/agent-platform/runtimes?cloudshell_git_repo=https://github.com/alper-sari/devfest-ankara-26.git&cloudshell_tutorial=.journey/tutorial.neos.md&show=ide&cloudshell_workspace=)
+[![Begin the Tutorial](.journey/journey.svg)](https://console.cloud.google.com/agent-platform/runtimes?cloudshell_git_repo=https://github.com/alper-sari/developer-communities-guild-26.git&cloudshell_tutorial=.journey/tutorial.neos.md&show=ide&cloudshell_workspace=)
 
 ---
 
@@ -46,7 +46,7 @@ The DevOps Agent includes production-ready SRE observation tools:
 ## 📂 Repository Structure
 
 ```text
-devfest-ankara-26/
+developer-communities-guild-26/
 ├── .journey/
 │   ├── journey.svg              # Cloud Shell "Begin Tutorial" button
 │   └── tutorial.neos.md         # Interactive step-by-step walkthrough
@@ -67,8 +67,8 @@ devfest-ankara-26/
 
 ### 1. Clone & Setup
 ```bash
-git clone https://github.com/alper-sari/devfest-ankara-26.git
-cd devfest-ankara-26
+git clone https://github.com/alper-sari/developer-communities-guild-26.git
+cd developer-communities-guild-26
 ```
 
 ### 2. Upgrade the Agent Platform SDK
