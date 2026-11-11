@@ -1,6 +1,6 @@
 # Not Risky Anymore: Enforcing Native IAM Boundaries for Production AI Agents
 
-> **DevFest Ankara'26 Hands-on Workshop**: Build, deploy, and secure an autonomous DevOps & SRE AI Agent using Google Cloud's **Agent Development Kit (ADK)**, **Gemini 3.5 Flash-Lite**, and **Vertex AI Agent Engine** with **Zero Service Accounts** and **Native SPIFFE Workload Identity**.
+> **Developer Communities Guild'26 Hands-on Workshop**: Build, deploy, and secure an autonomous DevOps & SRE AI Agent using Google Cloud's **Agent Development Kit (ADK)**, **Gemini 3.5 Flash-Lite**, and **Vertex AI Agent Engine** with **Zero Service Accounts** and **Native SPIFFE Workload Identity**.
 
 ---
 
@@ -98,7 +98,7 @@ adk deploy agent_engine \
 
 ---
 
-## 🏆 DevFest Ankara'26 Presentation Highlights
+## 🏆 Developer Communities Guild'26 Presentation Highlights
 
 1. **Compare Models**: Explain how **Gemini 3.5 Flash-Lite** brings state-of-the-art agentic tool calling and reasoning with sub-second latency.
 2. **Demonstrate Zero Trust**: Show the agent failing with `403 Forbidden` before permissions are granted, proving that no ambient service account access exists.
@@ -110,10 +110,10 @@ adk deploy agent_engine \
 
 **Alper Sarı**  
 *Google Developer Expert (GDE) on Google Cloud*  
-*DevFest Ankara'26*
+*Developer Communities Guild'26*
 
 ---
 
 ## 📄 License
 
-Apache 2.0 - Developed for DevFest Ankara'26 workshops.
+Apache 2.0 - Developed for Developer Communities Guild'26 workshops.
